@@ -1,0 +1,33 @@
+fieldset {
+    max-width: 250px;
+    position: fixed;
+    text-align: center;
+    border-radius: 15px;
+}
+
+legend {
+    color: cadetblue;
+}
+
+.flightIcon {
+    list-style-type: "✈"; 
+}
+
+.flightIcon li::marker{
+    font-size:25px;
+}
+
+.div-log {
+    padding: 5px;
+    max-width:300px; 
+    margin:0 auto;
+    text-align: center;
+    border: dashed 5px #4a95db;
+    border-radius: 25px;
+}
+
+hr {
+    margin: 20px auto;
+    background-color: rgba(137, 43, 226, 0.397);
+    border: none;
+}

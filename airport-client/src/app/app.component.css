@@ -1,0 +1,24 @@
+nav {
+    width: 100%;
+    background-color: rgb(79, 75, 83);
+}
+
+li {
+    display: inline-block;
+    transition: 0.5s;
+    padding: 0PX 20PX;
+    font-size: 40PX;
+}
+
+li:hover {
+    transform: scale(1.3);
+}
+
+span {
+    color: rgb(247, 247, 207);
+    cursor: pointer;
+}
+
+ol {
+    padding:0.2em ;
+}

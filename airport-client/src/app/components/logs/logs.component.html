@@ -1,0 +1,26 @@
+<fieldset>
+    <legend>
+        <h1>Airport Flights</h1>
+    </legend>
+    <ul *ngFor="let flight of flights" class="flightIcon">
+        <li [ngStyle]="{'color': getColor(flight.id)}">
+            <h2>{{flight.flightNumber}}</h2>
+        </li>
+    </ul>
+</fieldset>
+
+<div *ngFor="let log of logs">
+    <div class="div-log" [ngStyle]="{'background-color': getColor(log.flight.id)}">
+        <h3>Flight Number: <em>{{log.flight.flightNumber}}</em></h3>
+        <h3>Brand: <em>{{log.flight.brand}}</em></h3>
+        <h3>Current Leg: <em>{{log.legId}}</em></h3>
+        <h3>Status: <em>{{log.flightStatus}} </em>
+            <span *ngIf="log.flightStatus === 'Arrival'">🛫</span>
+            <span *ngIf="log.flightStatus === 'Departure'">🛬</span>
+        </h3>
+        <h3>Passengers: <em>{{log.passengersCount}} </em>👨‍👩‍👧‍👦</h3>
+        <h3>In: {{log.inLeg | date:'dd/MM/yyyy - HH:mm:ss'}}</h3>
+        <h3>Out: {{log.out | date:'dd/MM/yyyy - HH:mm:ss'}}</h3>
+    </div>
+    <hr size="5px" width="800px">
+</div>
