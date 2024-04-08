@@ -45,17 +45,17 @@ Leg 8 serves as a shuttle to the departure terminal at leg number 4. From there 
 <br>
 
 #### The transition between the different legs is carried out as follows:
-leg number 1 can only move to leg number 2.
+Leg number 1 can only move to leg number 2.
 <br>
-leg number 2 can only move to leg number 3.
+Leg number 2 can only move to leg number 3.
 <br>
-leg number 3 can only move to leg number 4.
+Leg number 3 can only move to leg number 4.
 <br>
-leg number 4 can only move to leg number 5 or 9 (depending on the flight status).
+Leg number 4 can only move to leg number 5 or 9 (depending on the flight status).
 <br>
-leg number 5 can only move to leg number 6 or 7 (depending on who is free).
+Leg number 5 can only move to leg number 6 or 7 (depending on who is free).
 <br>
-leg number 8 can only move to leg number 4.
+Leg number 8 can only move to leg number 4.
 <br>
 The server manages all the logic, checks which next leg is optional to switch to, waits for callbacks when a leg becomes free, and more.
 <br>
