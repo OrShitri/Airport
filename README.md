@@ -10,7 +10,7 @@ On the server side, multithreading / events / EF6 is used and work against SQL S
 And a client in Angular that displays it in real time.
 <br>
 
-##Simulator:
+## Simulator:
 <br>
 The simulator is an independent project based on the Console application (C# - .Net Core).
 <br>
@@ -19,14 +19,14 @@ The simulator produces flights that arrive for landing and approach leg 1.
 The flight simulator communicates via the HTTP network and injects a JSON object (in a random period of time) via a Post request to the API server built in Asp.net core web Api.
 <br>
 
-##Server:
+## Server:
 <br>
 API server built in Asp.net core web API.
 <br>
 On the server side, multithreading / events / EF6 is used and work with SQL Server with multiple asynchronous calls. All logic is done on the server side.
 <br>
 
-###Server logic:
+### Server logic:
 <br>
 At any given time, a maximum of 4 planes are at the airport.
 <br>
@@ -36,7 +36,7 @@ Each leg has a maximum of one flight/plane.
 Each leg has a specific dwell time that the aircraft must be in before moving to the next stage (Leg). 
 <br>
 
-####Total Of 9 Legs:
+#### Total Of 9 Legs:
 <br>
 Legs 1-3 are in the air on approach to land.
 <br>
@@ -49,7 +49,7 @@ Leg 6 and 7 are used as flight sleeves for a parking position for airplanes, unl
 Leg 8 serves as a shuttle to the departure terminal at leg number 4. From there the flight leaves for leg number 9 which is an airport exit.
 <br>
 
-#####The transition between the different legs is carried out as follows:
+##### The transition between the different legs is carried out as follows:
 <br>
 leg number 1 can only move to leg number 2.
 <br>
@@ -66,12 +66,12 @@ leg number 8 can only move to leg number 4.
 The server manages all the logic, checks which next leg is optional to switch to, waits for callbacks when a leg becomes free, and more.
 <br>
 
-##Data Base
+## Data Base
 <br>
 All the activities of the flights, including transitions between the different legs, entry and exit times, loading and unloading of passengers and the flight status are saved on logs in the database, on MSSQL (SQL Server).
 <br>
 
-##Client
+## Client
 <br>
 An Angular client that communicates with the server (API server) and receives logs and flights from the controller and displays the data in real time.
 
