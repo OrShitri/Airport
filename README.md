@@ -29,7 +29,6 @@ At any given time, a maximum of 4 planes are at the airport.
 <br>
 Each leg has a maximum of one flight/plane.
 <br>
-<br>
 Each leg has a specific dwell time that the aircraft must be in before moving to the next stage (Leg). 
 <br>
 
@@ -45,7 +44,7 @@ Leg 6 and 7 are used as flight sleeves for a parking position for airplanes, unl
 Leg 8 serves as a shuttle to the departure terminal at leg number 4. From there the flight leaves for leg number 9 which is an airport exit.
 <br>
 
-##### The transition between the different legs is carried out as follows:
+#### The transition between the different legs is carried out as follows:
 leg number 1 can only move to leg number 2.
 <br>
 leg number 2 can only move to leg number 3.
