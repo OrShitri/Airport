@@ -1,4 +1,4 @@
-<img align="center" alt="airport" style="padding-right:10px;" src="https://www.ifminvestors.com/siteassets/shared-media/assets/vienna-airport/vienna-airport-1.jpg" />  
+<img align="center" alt="airport" height="450px" style="padding-right:10px;" src="https://www.ifminvestors.com/siteassets/shared-media/assets/vienna-airport/vienna-airport-1.jpg" />  
 
 # Airport
 A complex end-to-end system (Backend & Frontend) that simulates activity at an airport, and combines 3 systems that are connected together.
