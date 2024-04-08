@@ -11,7 +11,6 @@ And a client in Angular that displays it in real time.
 <br>
 
 ## Simulator:
-<br>
 The simulator is an independent project based on the Console application (C# - .Net Core).
 <br>
 The simulator produces flights that arrive for landing and approach leg 1.
@@ -20,14 +19,12 @@ The flight simulator communicates via the HTTP network and injects a JSON object
 <br>
 
 ## Server:
-<br>
 API server built in Asp.net core web API.
 <br>
 On the server side, multithreading / events / EF6 is used and work with SQL Server with multiple asynchronous calls. All logic is done on the server side.
 <br>
 
 ### Server logic:
-<br>
 At any given time, a maximum of 4 planes are at the airport.
 <br>
 Each leg has a maximum of one flight/plane.
@@ -37,7 +34,6 @@ Each leg has a specific dwell time that the aircraft must be in before moving to
 <br>
 
 #### Total Of 9 Legs:
-<br>
 Legs 1-3 are in the air on approach to land.
 <br>
 Leg 4 with status of arrivals / departures (depending on where the flight came from).
@@ -50,7 +46,6 @@ Leg 8 serves as a shuttle to the departure terminal at leg number 4. From there 
 <br>
 
 ##### The transition between the different legs is carried out as follows:
-<br>
 leg number 1 can only move to leg number 2.
 <br>
 leg number 2 can only move to leg number 3.
@@ -67,12 +62,10 @@ The server manages all the logic, checks which next leg is optional to switch to
 <br>
 
 ## Data Base
-<br>
 All the activities of the flights, including transitions between the different legs, entry and exit times, loading and unloading of passengers and the flight status are saved on logs in the database, on MSSQL (SQL Server).
 <br>
 
 ## Client
-<br>
 An Angular client that communicates with the server (API server) and receives logs and flights from the controller and displays the data in real time.
 
 
